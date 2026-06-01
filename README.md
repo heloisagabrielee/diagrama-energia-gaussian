@@ -2,7 +2,7 @@
 
 Este repositório contém um script em Python para visualização de perfis de energia livre de Gibbs (diagramas de coordenada de reação). O código compara barreiras de ativação e energias de reação para quatro conformações distintas (B1, B2, D1 e D2).
 
-## 🔬 Metodologia e Origem dos Dados
+## Metodologia e Origem dos Dados
 
 As constantes termodinâmicas utilizadas neste script não são arbitrárias. Elas foram obtidas através de cálculos de química quântica utilizando o software **Gaussian**. 
 
@@ -12,14 +12,14 @@ Devido ao custo computacional do nível de teoria empregado (**R.nitrato/aug-cc-
 
 Os valores extraídos dos arquivos de saída (`.out` / `.log`) do Gaussian foram convertidos para kcal/mol e inseridos neste script para a geração do gráfico de alta qualidade.
 
-## 📊 O Gráfico Gerado
+## O Gráfico Gerado
 
 O script modela a transição energética usando funções gaussianas emendadas, gerando curvas suaves:
 *   **Círculos (o):** Reagentes (mínimo reagente)
 *   **Quadrados (s):** Estado de Transição (máximo energético / Barreira)
 *   **Triângulos (^):** Produtos (mínimo produto)
 
-## 🛠️ Parâmetros Termodinâmicos Utilizados (kcal/mol)
+## Parâmetros Termodinâmicos Utilizados (kcal/mol)
 
 
 | Conformação | Reagentes ($\Delta G$) | Ativação ($\Delta G^\ddagger$) | Produtos ($\Delta G$) |
@@ -29,7 +29,7 @@ O script modela a transição energética usando funções gaussianas emendadas,
 | **D1** | 0.0 | 10.39 | -12.60 |
 | **D2** | 0.0 | 11.22 | -1.33 |
 
-## 🚀 Como Executar o Script
+## Como Executar o Script
 
 ### Pré-requisitos
 Você precisará do Python 3 instalado e das bibliotecas listadas em `requirements.txt`.
@@ -50,7 +50,7 @@ pip install -r requirements.txt
 python plot_reaction.py
 ```
 
-## 📦 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 *   **Python 3**
 *   **Matplotlib** (Plotagem gráfica)
 *   **NumPy** (Cálculos vetoriais)
